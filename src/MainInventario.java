@@ -30,8 +30,8 @@ public class MainInventario {
         inventario.actualizarStock("Monitor", 5);
         inventario.listarProductos();
 
-        System.out.println("Actualizado el stock de un producto que no existe (RAM) a 7. No debería actualizarm pero tampoco dar error");
-        //inventario.actualizarStock("RAM", 7);
+        System.out.println("Actualizado el stock de un producto que no existe (RAM) a 7. No debería actualizar pero tampoco dar error");
+        inventario.actualizarStock("RAM", 7);
         inventario.listarProductos();
 
         // Manipulamos datos “erróneos” para el valor total
@@ -46,9 +46,9 @@ public class MainInventario {
         inventario.eliminarProducto("Raton");
         inventario.listarProductos();
 
-        // intentando actualizar el stock del producto eliminado
+
         System.out.println("Intentando actualizar el stock del producto eliminado... ");
-       // inventario.actualizarStock("Raton", 5);
+        //inventario.actualizarStock("Raton", 5);
 
 
         double valorTotal2 = inventario.calcularValorTotalStock();
